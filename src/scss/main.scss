@@ -1,0 +1,219 @@
+@import 'colors';
+@import 'fonts';
+@import 'reusable';
+
+//mixin
+@mixin make-image($url, $type, $repeat, $size, $position, $bg-position) {
+  position: $position;
+  background-image: url('../assets/img/#{$url}.#{$type}');
+  background-repeat: $repeat;
+  background-size: $size;
+  background-position: $bg-position;
+}
+@mixin bg-atach{
+  background: $white fixed no-repeat 50% 50%;
+  background-size: cover;
+}
+
+/*********************GENERAL*******************/
+body{
+  margin: 0;
+  box-sizing: border-box;
+  background-color: $white !important;
+}
+a{
+  text-decoration: none;
+  &:hover{text-decoration: none;}
+}
+/****************** NAVBAR *******************/
+#home{
+  // background: rgba(0,0,0,0.01);
+}
+/*STYLES MENU*/
+.menu-lg{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* padding-right: 36px; */
+  margin-right: 4rem;
+  color: white;
+  margin-bottom: 0;
+  li{
+    padding-right: 2rem;
+    font-size: 18px;
+    font-weight: 400;
+    a{
+      color: white;
+    }
+  }
+}
+/*MENU RESPONSIVE*/
+.menu{
+  list-style: none;
+  line-height: 42px;
+  padding-left: 0;
+  width: 20em;
+  margin: .6em auto;
+  a{
+    color: $white;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+
+    span{
+      padding-right: 1em;
+      font-size: x-large;
+    }
+    &:hover{
+      margin-left: 1em;
+    }
+  }
+  li{
+    box-shadow: 3px 0 rgba(255,255,255,0.2) inset;
+    margin: 5px;
+    margin-top: 0;
+    padding-top: 5px;
+    padding-left: 1.5em;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    &:hover{
+      box-shadow: 20em 0 rgba(255,255,255,0.5) inset;
+    }
+  }
+}
+.nav-show2{
+  height: 50px;
+  width: 100%;
+  z-index: 30;
+  background-color: $red;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+nav{
+  background: $red;
+  left: -21em;
+  height: 100vh;
+  position: fixed;
+  top:0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+nav.show{
+  left: 0;
+  z-index: 20;
+}
+#show-nav{
+  @include make-image(hamburguesa, png, no-repeat, contain, '', center);
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  margin-left: 2em;
+  display: inline-block;
+}
+.nav-header{
+  height: 50px;
+  width: 100%;
+  z-index: 30;
+  background-color: $red;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.logo{
+  float: right;
+  width: 120px;
+  top: 0;
+  margin-left: 2em;
+}
+/***************BANNER*******************/
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: $red;
+}
+.bg-item{
+  height: 85vh;
+  width: 100%;
+  padding-top: 10%;
+  padding-left: 40%;
+  @media (max-width: 41.5em) {
+    padding-top: 40%;
+    padding-left: 20%;
+  }
+  @media screen and (max-width: 69.5em) {
+    padding-top: 35%;
+    padding-left: 25%;
+  }
+}
+$count:0;
+@each $images in amovil, hogar, velocidad{
+  $count: $count +1;
+  .itemImg#{$count} {
+      @include make-image($images, png, no-repeat, cover, relative , center bottom);
+  }
+}
+.contenedor{
+  height: 90vh;
+  overflow: hidden;
+  margin-top: 50px;
+}
+.owl-carousel .owl-item img{
+  width: auto;
+}
+
+@media only screen and (max-width: 41.5em) {
+  .contenedor-bg{
+    width: 100%;
+    height: 350px;
+  }
+  .div-contenedor-bg{
+    width: 100%;
+    height: 450px;
+  }
+}
+
+/***************ABOUT*******************/
+#about{
+  height: 100vh;
+  color:$red; /*$red:*/
+  background-color: $grey;
+  overflow: hidden;
+}
+
+/***************************PORTAFOLIO********************/
+#portafolio{
+  //background-image: url('../assets/img/bg3.png');
+  background-color: rgba(0,0,0,0.02);
+  overflow: hidden;
+  padding-bottom: 2em;
+}
+
+/********************CONTACT***********************/
+#contact{
+  overflow: hidden;
+  color: $white;
+  p{
+    font-size: 1.3em;
+    text-align: justify;
+  }
+  h2{
+    text-shadow: 0.5px 0.5px 0.5px $white;
+  }
+
+}
+/**********footer styles*******/
+footer {
+  color: white;
+}
+footer h3 {
+  margin-bottom: 30px;
+}
+footer .footer-col {
+  margin-bottom: 50px;
+}
+footer .footer-below {
+  padding: 25px 0;
+  background-color: $red;
+}

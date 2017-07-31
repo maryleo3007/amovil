@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+.bg-grey {
+  background-color: #F1F1F1; }
+
+.color-org {
+  color: #FF5722; }
+
+.border-blue {
+  border-bottom: 4px solid #2F1B41; }
+
+/*********************GENERAL*******************/
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #ffffff !important; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
+/****************** NAVBAR *******************/
+/*STYLES MENU*/
+.menu-lg {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* padding-right: 36px; */
+  margin-right: 4rem;
+  color: white;
+  margin-bottom: 0; }
+  .menu-lg li {
+    padding-right: 2rem;
+    font-size: 18px;
+    font-weight: 400; }
+    .menu-lg li a {
+      color: white; }
+
+/*MENU RESPONSIVE*/
+.menu {
+  list-style: none;
+  line-height: 42px;
+  padding-left: 0;
+  width: 20em;
+  margin: .6em auto; }
+  .menu a {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s; }
+    .menu a span {
+      padding-right: 1em;
+      font-size: x-large; }
+    .menu a:hover {
+      margin-left: 1em; }
+  .menu li {
+    box-shadow: 3px 0 rgba(255, 255, 255, 0.2) inset;
+    margin: 5px;
+    margin-top: 0;
+    padding-top: 5px;
+    padding-left: 1.5em;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s; }
+    .menu li:hover {
+      box-shadow: 20em 0 rgba(255, 255, 255, 0.5) inset; }
+
+.nav-show2 {
+  height: 50px;
+  width: 100%;
+  z-index: 30;
+  background-color: #DC021E;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+nav {
+  background: #DC021E;
+  left: -21em;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+
+nav.show {
+  left: 0;
+  z-index: 20; }
+
+#show-nav {
+  position: "";
+  background-image: url("../assets/img/hamburguesa.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  margin-left: 2em;
+  display: inline-block; }
+
+.nav-header {
+  height: 50px;
+  width: 100%;
+  z-index: 30;
+  background-color: #DC021E;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.logo {
+  float: right;
+  width: 120px;
+  top: 0;
+  margin-left: 2em; }
+
+/***************BANNER*******************/
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: #DC021E; }
+
+.bg-item {
+  height: 85vh;
+  width: 100%;
+  padding-top: 10%;
+  padding-left: 40%; }
+  @media (max-width: 41.5em) {
+    .bg-item {
+      padding-top: 40%;
+      padding-left: 20%; } }
+  @media screen and (max-width: 69.5em) {
+    .bg-item {
+      padding-top: 35%;
+      padding-left: 25%; } }
+
+.itemImg1 {
+  position: relative;
+  background-image: url("../assets/img/amovil.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom; }
+
+.itemImg2 {
+  position: relative;
+  background-image: url("../assets/img/hogar.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom; }
+
+.itemImg3 {
+  position: relative;
+  background-image: url("../assets/img/velocidad.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom; }
+
+.contenedor {
+  height: 90vh;
+  overflow: hidden;
+  margin-top: 50px; }
+
+.owl-carousel .owl-item img {
+  width: auto; }
+
+@media only screen and (max-width: 41.5em) {
+  .contenedor-bg {
+    width: 100%;
+    height: 350px; }
+
+  .div-contenedor-bg {
+    width: 100%;
+    height: 450px; } }
+/***************ABOUT*******************/
+#about {
+  height: 100vh;
+  color: #DC021E;
+  /*$red:*/
+  background-color: #f4f4f4;
+  overflow: hidden; }
+
+/***************************PORTAFOLIO********************/
+#portafolio {
+  background-color: rgba(0, 0, 0, 0.02);
+  overflow: hidden;
+  padding-bottom: 2em; }
+
+/********************CONTACT***********************/
+#contact {
+  overflow: hidden;
+  color: #ffffff; }
+  #contact p {
+    font-size: 1.3em;
+    text-align: justify; }
+  #contact h2 {
+    text-shadow: 0.5px 0.5px 0.5px #ffffff; }
+
+/**********footer styles*******/
+footer {
+  color: white; }
+
+footer h3 {
+  margin-bottom: 30px; }
+
+footer .footer-col {
+  margin-bottom: 50px; }
+
+footer .footer-below {
+  padding: 25px 0;
+  background-color: #DC021E; }
+
+/*# sourceMappingURL=main.css.map */
