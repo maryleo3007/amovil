@@ -20,6 +20,7 @@ body{
   margin: 0;
   box-sizing: border-box;
   background-color: $white !important;
+  font-family: $font-open!important;
 }
 a{
   text-decoration: none;
@@ -92,6 +93,7 @@ a{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  box-shadow: 0 4px 4px rgba(0,0,0,.3);
 }
 nav{
   background: $red;
@@ -128,6 +130,7 @@ nav.show{
   width: 120px;
   top: 0;
   margin-left: 2em;
+  padding-top: 5px;
 }
 /***************BANNER*******************/
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
@@ -136,7 +139,7 @@ nav.show{
 .bg-item{
   height: 85vh;
   width: 100%;
-  padding-top: 10%;
+  padding-top: 20%;
   padding-left: 40%;
   @media (max-width: 41.5em) {
     padding-top: 40%;
@@ -148,10 +151,10 @@ nav.show{
   }
 }
 $count:0;
-@each $images in amovil, hogar, velocidad{
+@each $images in amovil, back-school-deskt, call-any-desk, claromax-desk{
   $count: $count +1;
   .itemImg#{$count} {
-      @include make-image($images, png, no-repeat, cover, relative , center bottom);
+      @include make-image($images, png, no-repeat, cover, relative , center top);
   }
 }
 .contenedor{
@@ -174,20 +177,88 @@ $count:0;
   }
 }
 
-/***************ABOUT*******************/
-#about{
-  height: 100vh;
-  color:$red; /*$red:*/
-  background-color: $grey;
-  overflow: hidden;
-}
-
-/***************************PORTAFOLIO********************/
-#portafolio{
+/***************************PRODUCTS********************/
+#products{
   //background-image: url('../assets/img/bg3.png');
-  background-color: rgba(0,0,0,0.02);
+
   overflow: hidden;
   padding-bottom: 2em;
+}
+.box{
+  width: 90%;
+  margin: 10px auto;
+}
+.box-title{
+  background: $red;
+  padding: 15px 4%;
+  width: 40%;
+  float: left;
+  color: white;
+  text-align: center;
+  h3{
+    font-weight: 600;
+    font-size: 2.1em;
+  }
+  .cobertura{
+    img{
+      width: 25px;
+    }
+    p{
+      display: inline;
+    }
+  }
+  .plan-gb{
+    padding: 40.5% 0px;
+    h2{
+      font-size: 4em;
+      font-weight: 700;
+    }
+  }
+}
+.box-body{
+  border: 1px solid $red;
+  width: 60%;
+  float: left;
+  height: auto;
+  padding: 14px 5%;
+  ul{
+    padding: 0;
+    li{
+      list-style: none;
+      img{
+        width: 25px;
+        margin-right: 10px;
+      }
+      p{
+        color: #000;
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 1;
+        display: inline;
+        vertical-align: middle;
+      }
+      span{
+        color: #0b0b0b;
+        display: block;
+        padding: 7px 0px 14px;
+      }
+      .claro-musica, .claro-video{
+        width: 100px;
+      }
+      .redes-sociales{
+        display: block;
+        padding-top: 7px;
+        margin-bottom: 0px;
+      }
+    }
+  }
+}
+/***************tiendas*******************/
+#stores{
+  height: 100vh;
+  color:$red; /*$red:*/
+  background-color: rgba(0,0,0,0.02);
+  overflow: hidden;
 }
 
 /********************CONTACT***********************/

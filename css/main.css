@@ -12,7 +12,8 @@
 body {
   margin: 0;
   box-sizing: border-box;
-  background-color: #ffffff !important; }
+  background-color: #ffffff !important;
+  font-family: "Roboto", sans-serif !important; }
 
 a {
   text-decoration: none; }
@@ -71,13 +72,14 @@ a {
   height: 50px;
   width: 100%;
   z-index: 30;
-  background-color: #DC021E;
+  background-color: #da262d;
   display: flex;
   flex-direction: row;
-  justify-content: space-between; }
+  justify-content: space-between;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3); }
 
 nav {
-  background: #DC021E;
+  background: #da262d;
   left: -21em;
   height: 100vh;
   position: fixed;
@@ -105,7 +107,7 @@ nav.show {
   height: 50px;
   width: 100%;
   z-index: 30;
-  background-color: #DC021E;
+  background-color: #da262d;
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
@@ -114,16 +116,17 @@ nav.show {
   float: right;
   width: 120px;
   top: 0;
-  margin-left: 2em; }
+  margin-left: 2em;
+  padding-top: 5px; }
 
 /***************BANNER*******************/
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-  background: #DC021E; }
+  background: #da262d; }
 
 .bg-item {
   height: 85vh;
   width: 100%;
-  padding-top: 10%;
+  padding-top: 20%;
   padding-left: 40%; }
   @media (max-width: 41.5em) {
     .bg-item {
@@ -139,21 +142,28 @@ nav.show {
   background-image: url("../assets/img/amovil.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center bottom; }
+  background-position: center top; }
 
 .itemImg2 {
   position: relative;
-  background-image: url("../assets/img/hogar.png");
+  background-image: url("../assets/img/back-school-deskt.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center bottom; }
+  background-position: center top; }
 
 .itemImg3 {
   position: relative;
-  background-image: url("../assets/img/velocidad.png");
+  background-image: url("../assets/img/call-any-desk.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center bottom; }
+  background-position: center top; }
+
+.itemImg4 {
+  position: relative;
+  background-image: url("../assets/img/claromax-desk.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top; }
 
 .contenedor {
   height: 90vh;
@@ -171,19 +181,73 @@ nav.show {
   .div-contenedor-bg {
     width: 100%;
     height: 450px; } }
-/***************ABOUT*******************/
-#about {
-  height: 100vh;
-  color: #DC021E;
-  /*$red:*/
-  background-color: #f4f4f4;
-  overflow: hidden; }
-
-/***************************PORTAFOLIO********************/
-#portafolio {
-  background-color: rgba(0, 0, 0, 0.02);
+/***************************PRODUCTS********************/
+#products {
   overflow: hidden;
   padding-bottom: 2em; }
+
+.box {
+  width: 90%;
+  margin: 10px auto; }
+
+.box-title {
+  background: #da262d;
+  padding: 15px 4%;
+  width: 40%;
+  float: left;
+  color: white;
+  text-align: center; }
+  .box-title h3 {
+    font-weight: 600;
+    font-size: 2.1em; }
+  .box-title .cobertura img {
+    width: 25px; }
+  .box-title .cobertura p {
+    display: inline; }
+  .box-title .plan-gb {
+    padding: 40.5% 0px; }
+    .box-title .plan-gb h2 {
+      font-size: 4em;
+      font-weight: 700; }
+
+.box-body {
+  border: 1px solid #da262d;
+  width: 60%;
+  float: left;
+  height: auto;
+  padding: 14px 5%; }
+  .box-body ul {
+    padding: 0; }
+    .box-body ul li {
+      list-style: none; }
+      .box-body ul li img {
+        width: 25px;
+        margin-right: 10px; }
+      .box-body ul li p {
+        color: #000;
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 1;
+        display: inline;
+        vertical-align: middle; }
+      .box-body ul li span {
+        color: #0b0b0b;
+        display: block;
+        padding: 7px 0px 14px; }
+      .box-body ul li .claro-musica, .box-body ul li .claro-video {
+        width: 100px; }
+      .box-body ul li .redes-sociales {
+        display: block;
+        padding-top: 7px;
+        margin-bottom: 0px; }
+
+/***************tiendas*******************/
+#stores {
+  height: 100vh;
+  color: #da262d;
+  /*$red:*/
+  background-color: rgba(0, 0, 0, 0.02);
+  overflow: hidden; }
 
 /********************CONTACT***********************/
 #contact {
@@ -207,6 +271,6 @@ footer .footer-col {
 
 footer .footer-below {
   padding: 25px 0;
-  background-color: #DC021E; }
+  background-color: #da262d; }
 
 /*# sourceMappingURL=main.css.map */
