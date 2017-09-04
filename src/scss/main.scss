@@ -194,85 +194,142 @@ $count:0;
 }
 
 /***************************PRODUCTS********************/
-#products{
+//productos postpago
+#products-postpago{
   //background-image: url('../assets/img/bg3.png');
-
+  margin-top: 50px;
   overflow: hidden;
   padding-bottom: 2em;
-}
-.box{
-  width: 90%;
-  margin: 10px auto;
-}
-.box-title{
-  background: $red;
-  padding: 15px 4%;
-  width: 40%;
-  float: left;
-  color: white;
-  text-align: center;
-  h3{
-    font-weight: 600;
-    font-size: 1.9em;
+  .box{
+    width: 90%;
+    margin: 10px auto;
   }
-  .redes-sociales{
-    display: block;
-    padding-top: 7px;
-    margin-bottom: 0px;
-    img{
-      width: 25px;
-      margin-right: 10px;
+  .box-title{
+    background: $red;
+    padding: 15px 4%;
+    width: 40%;
+    height: 291px;
+    float: left;
+    color: white;
+    text-align: center;
+    h3{
+      font-weight: 600;
+      font-size: 1.9em;
     }
-  }
-  .cobertura{
-    img{
-      width: 25px;
-    }
-    p{
-      display: inline;
-    }
-  }
-  .plan-gb{
-    padding: 0.5% 0px;
-    h2{
-      font-size: 3em;
-      font-weight: 700;
-    }
-  }
-}
-.box-body{
-  border: 1px solid $red;
-  width: 60%;
-  float: left;
-  height: auto;
-  padding: 14px 5%;
-  ul{
-    padding: 0;
-    li{
-      list-style: none;
+    .redes-sociales{
+      display: block;
+      padding-top: 7px;
+      margin-bottom: 0px;
       img{
         width: 25px;
         margin-right: 10px;
       }
+    }
+    .cobertura{
+      img{
+        width: 25px;
+      }
       p{
-        color: #000;
-        font-size: 21px;
-        font-weight: 700;
-        line-height: 1;
         display: inline;
-        vertical-align: middle;
       }
-      span{
-        color: #0b0b0b;
-        display: block;
-        padding: 7px 0px 14px;
+    }
+    .plan-gb{
+      padding: 0.5% 0px;
+      h2{
+        font-size: 3em;
+        font-weight: 700;
       }
-      .claro-musica, .claro-video{
-        width: 100px;
+    }
+  }
+  .box-body{
+    border: 1px solid $red;
+    width: 60%;
+    float: left;
+    height: 291px;
+    padding: 7px 5%;
+    ul{
+      padding: 0;
+      li{
+        list-style: none;
+        img{
+          width: 25px;
+          margin-right: 10px;
+        }
+        p{
+          color: #000;
+          font-size: 1em;
+          font-weight: 700;
+          line-height: 1;
+          display: inline;
+          vertical-align: middle;
+        }
+        span{
+          color: #0b0b0b;
+          display: block;
+          padding: 2px 0px 7px;
+        }
+        .claro-musica, .claro-video{
+          width: 100px;
+        }
       }
     }
   }
 }
+
+//productos prepago
+#products-prepago{
+  //background-image: url('../assets/img/bg3.png');
+  margin-top: 50px;
+  overflow: hidden;
+  padding-bottom: 2em;
+  .box{
+  width: 90%;
+  margin: 10px auto;
+  }
+  .box-title{
+    background: $red;
+    padding: 15px 4%;
+    width: 30%;
+    height: 291px;
+    float: left;
+    color: white;
+    text-align: center;
+    h3{
+      font-weight: 600;
+      font-size: 1.4em;
+      margin-top: 50%;
+      line-height: 2;
+    }
+  }
+  .box-body{
+    border: 1px solid $red;
+    width: 70%;
+    float: left;
+    height: 291px;
+    padding: 7px 3%;
+    ul{
+      padding: 0;
+      li{
+        list-style: none;
+        padding: 7px 0px;
+        img{
+          width: 25px;
+          margin-right: 10px;
+        }
+        p{
+          color: #0b0b0b;
+          font-size: 1em;
+          line-height: 1;
+          display: inline;
+          vertical-align: middle;
+          padding: 2px 0px 7px;
+        }
+      }
+    }
+  }
+}
+
+
 //footer
 footer {
   padding: 25px 0;

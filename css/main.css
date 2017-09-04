@@ -8,6 +8,9 @@
 .border-blue {
   border-bottom: 4px solid #2F1B41; }
 
+.bg-light {
+  background-color: #f8f9fa; }
+
 header.masthead {
   text-align: center;
   color: white;
@@ -310,7 +313,7 @@ header.masthead {
     .timeline > li.timeline-inverted > .timeline-panel {
       padding: 0 100px 20px 20px; } }
 section#contact {
-  background-color: #222222;
+  background-color: #777777;
   background-image: url("../assets/img/map-image.png");
   background-repeat: no-repeat;
   background-position: center; }
@@ -544,67 +547,108 @@ nav.show {
     width: 100%;
     height: 450px; } }
 /***************************PRODUCTS********************/
-#products {
+#products-postpago {
+  margin-top: 50px;
   overflow: hidden;
   padding-bottom: 2em; }
-
-.box {
-  width: 90%;
-  margin: 10px auto; }
-
-.box-title {
-  background: #da262d;
-  padding: 15px 4%;
-  width: 40%;
-  float: left;
-  color: white;
-  text-align: center; }
-  .box-title h3 {
-    font-weight: 600;
-    font-size: 1.9em; }
-  .box-title .redes-sociales {
-    display: block;
-    padding-top: 7px;
-    margin-bottom: 0px; }
-    .box-title .redes-sociales img {
-      width: 25px;
-      margin-right: 10px; }
-  .box-title .cobertura img {
-    width: 25px; }
-  .box-title .cobertura p {
-    display: inline; }
-  .box-title .plan-gb {
-    padding: 0.5% 0px; }
-    .box-title .plan-gb h2 {
-      font-size: 3em;
-      font-weight: 700; }
-
-.box-body {
-  border: 1px solid #da262d;
-  width: 60%;
-  float: left;
-  height: auto;
-  padding: 14px 5%; }
-  .box-body ul {
-    padding: 0; }
-    .box-body ul li {
-      list-style: none; }
-      .box-body ul li img {
+  #products-postpago .box {
+    width: 90%;
+    margin: 10px auto; }
+  #products-postpago .box-title {
+    background: #da262d;
+    padding: 15px 4%;
+    width: 40%;
+    height: 291px;
+    float: left;
+    color: white;
+    text-align: center; }
+    #products-postpago .box-title h3 {
+      font-weight: 600;
+      font-size: 1.9em; }
+    #products-postpago .box-title .redes-sociales {
+      display: block;
+      padding-top: 7px;
+      margin-bottom: 0px; }
+      #products-postpago .box-title .redes-sociales img {
         width: 25px;
         margin-right: 10px; }
-      .box-body ul li p {
-        color: #000;
-        font-size: 21px;
-        font-weight: 700;
-        line-height: 1;
-        display: inline;
-        vertical-align: middle; }
-      .box-body ul li span {
-        color: #0b0b0b;
-        display: block;
-        padding: 7px 0px 14px; }
-      .box-body ul li .claro-musica, .box-body ul li .claro-video {
-        width: 100px; }
+    #products-postpago .box-title .cobertura img {
+      width: 25px; }
+    #products-postpago .box-title .cobertura p {
+      display: inline; }
+    #products-postpago .box-title .plan-gb {
+      padding: 0.5% 0px; }
+      #products-postpago .box-title .plan-gb h2 {
+        font-size: 3em;
+        font-weight: 700; }
+  #products-postpago .box-body {
+    border: 1px solid #da262d;
+    width: 60%;
+    float: left;
+    height: 291px;
+    padding: 7px 5%; }
+    #products-postpago .box-body ul {
+      padding: 0; }
+      #products-postpago .box-body ul li {
+        list-style: none; }
+        #products-postpago .box-body ul li img {
+          width: 25px;
+          margin-right: 10px; }
+        #products-postpago .box-body ul li p {
+          color: #000;
+          font-size: 1em;
+          font-weight: 700;
+          line-height: 1;
+          display: inline;
+          vertical-align: middle; }
+        #products-postpago .box-body ul li span {
+          color: #0b0b0b;
+          display: block;
+          padding: 2px 0px 7px; }
+        #products-postpago .box-body ul li .claro-musica, #products-postpago .box-body ul li .claro-video {
+          width: 100px; }
+
+#products-prepago {
+  margin-top: 50px;
+  overflow: hidden;
+  padding-bottom: 2em; }
+  #products-prepago .box {
+    width: 90%;
+    margin: 10px auto; }
+  #products-prepago .box-title {
+    background: #da262d;
+    padding: 15px 4%;
+    width: 30%;
+    height: 291px;
+    float: left;
+    color: white;
+    text-align: center; }
+    #products-prepago .box-title h3 {
+      font-weight: 600;
+      font-size: 1.4em;
+      margin-top: 50%;
+      line-height: 2; }
+  #products-prepago .box-body {
+    border: 1px solid #da262d;
+    width: 70%;
+    float: left;
+    height: 291px;
+    padding: 7px 3%; }
+    #products-prepago .box-body ul {
+      padding: 0; }
+      #products-prepago .box-body ul li {
+        list-style: none;
+        padding: 7px 0px; }
+        #products-prepago .box-body ul li img {
+          width: 25px;
+          margin-right: 10px; }
+        #products-prepago .box-body ul li p {
+          color: #0b0b0b;
+          font-size: 1em;
+          line-height: 1;
+          display: inline;
+          vertical-align: middle;
+          padding: 2px 0px 7px; }
 
 footer {
   padding: 25px 0;
