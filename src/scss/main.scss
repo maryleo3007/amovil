@@ -23,6 +23,13 @@ a{
 .white{
   color: $white;
 }
+.fb{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 60px; 
+    z-index: 3;
+}
 .section-spc {
   padding: 80px 0;
   h2.section-heading {
@@ -174,7 +181,7 @@ $count:0;
   }
 }
 .contenedor{
-  height: 90vh;
+  
   overflow: hidden;
   margin-top: 50px;
 }
