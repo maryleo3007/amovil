@@ -58,7 +58,11 @@ header.masthead {
       text-transform: uppercase; } }
 .service-heading {
   margin: 15px 0;
-  text-transform: none; }
+  text-transform: none;
+  color: #000;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 5px; }
 
 #portfolio {
   background-color: #f8f9fa; }
@@ -107,7 +111,6 @@ header.masthead {
         text-transform: none; }
       #portfolio .portfolio-item .portfolio-caption p {
         font-size: 16px;
-        font-style: italic;
         margin: 0;
         font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
   #portfolio * {
@@ -368,19 +371,21 @@ a {
   a:hover {
     text-decoration: none; }
 
+.white {
+  color: #ffffff; }
+
 .section-spc {
   padding: 80px 0; }
   .section-spc h2.section-heading {
     font-size: 40px;
+    color: #b7222f;
     margin-top: 0;
     margin-bottom: 15px; }
   .section-spc h3.section-subheading {
     font-size: 16px;
     font-weight: 400;
-    font-style: italic;
     margin-bottom: 75px;
-    text-transform: none;
-    font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    text-transform: none; }
 
 @media (min-width: 768px) {
   .section-spc {
@@ -392,8 +397,6 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  /* padding-right: 36px; */
-  margin-right: 4rem;
   color: white;
   margin-bottom: 0; }
   .menu-lg li {
@@ -437,7 +440,7 @@ a {
   height: 50px;
   width: 100%;
   z-index: 30;
-  background-color: #da262d;
+  background-color: #DC021E;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -457,15 +460,9 @@ nav.show {
   z-index: 20; }
 
 #show-nav {
-  position: "";
-  background-image: url("../assets/img/hamburguesa.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  width: 42px;
-  height: 42px;
-  cursor: pointer;
-  margin-left: 2em;
+  color: white;
+  font-size: 30px;
+  padding: 8px 20px;
   display: inline-block; }
 
 .nav-header {

@@ -20,20 +20,24 @@ a{
   text-decoration: none;
   &:hover{text-decoration: none;}
 }
+.white{
+  color: $white;
+}
 .section-spc {
   padding: 80px 0;
   h2.section-heading {
     font-size: 40px;
+    color: $red-title;  
     margin-top: 0;
     margin-bottom: 15px;
   }
   h3.section-subheading {
     font-size: 16px;
     font-weight: 400;
-    font-style: italic;
+    
     margin-bottom: 75px;
     text-transform: none;
-    @include serif-font;
+    
   }
 }
 @media(min-width:768px) {
@@ -52,8 +56,6 @@ a{
   display: flex;
   flex-direction: row;
   align-items: center;
-  /* padding-right: 36px; */
-  margin-right: 4rem;
   color: white;
   margin-bottom: 0;
   li{
@@ -105,7 +107,7 @@ a{
   height: 50px;
   width: 100%;
   z-index: 30;
-  background-color: $red;
+  background-color: #DC021E;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -125,18 +127,16 @@ nav.show{
   z-index: 20;
 }
 #show-nav{
-  @include make-image(hamburguesa, png, no-repeat, contain, '', center);
-  width: 42px;
-  height: 42px;
-  cursor: pointer;
-  margin-left: 2em;
-  display: inline-block;
+    color: white;
+    font-size: 30px;
+    padding: 8px 20px;
+    display: inline-block;
 }
 .nav-header{
   height: 50px;
   width: 100%;
   z-index: 30;
-  background-color: $red;
+  background-color: $red; 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
