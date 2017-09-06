@@ -83,7 +83,7 @@ header.masthead {
         -moz-transition: all ease 0.5s;
         transition: all ease 0.5s;
         opacity: 0;
-        background: rgba(218, 38, 45, 0.9); }
+        background: rgba(218, 38, 45, 0.3); }
         #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
           opacity: 1; }
         #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {

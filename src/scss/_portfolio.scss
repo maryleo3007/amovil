@@ -18,7 +18,7 @@ background-color: $bg-light;
         -moz-transition: all ease 0.5s;
         transition: all ease 0.5s;
         opacity: 0;
-        background: fade-out($red, .1);
+        background: fade-out($red, 0.7);
         &:hover {
           opacity: 1;
         }
