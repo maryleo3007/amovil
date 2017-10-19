@@ -23,28 +23,29 @@ a{
 .white{
   color: $white;
 }
+
 .fb{
     position: fixed;
     bottom: 10px;
     right: 10px;
-    width: 60px; 
-    z-index: 3;
+    width: 60px;
+    z-index: 100;
 }
 .section-spc {
   padding: 80px 0;
   h2.section-heading {
     font-size: 40px;
-    color: $red-title;  
+    color: $red-title;
     margin-top: 0;
     margin-bottom: 15px;
   }
   h3.section-subheading {
     font-size: 16px;
     font-weight: 400;
-    
+
     margin-bottom: 75px;
     text-transform: none;
-    
+
   }
 }
 @media(min-width:768px) {
@@ -52,10 +53,13 @@ a{
     padding: 100px 0;
   }
 }
-
+.item-select{
+  border-bottom: 2px solid $white;
+}
 /****************** NAVBAR *******************/
 #home{
   // background: rgba(0,0,0,0.01);
+
 }
 /*STYLES MENU*/
 .menu-lg{
@@ -143,7 +147,7 @@ nav.show{
   height: 50px;
   width: 100%;
   z-index: 30;
-  background-color: $red; 
+  background-color: $red;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -181,7 +185,7 @@ $count:0;
   }
 }
 .contenedor{
-  
+  position: relative;
   overflow: hidden;
   margin-top: 50px;
 }
@@ -199,7 +203,24 @@ $count:0;
     height: 450px;
   }
 }
-
+.svg-carousel {
+    position: absolute;
+    width: 100%;
+    transform: translateY(-62%);
+    background-color: transparent;
+    z-index: 10;
+    bottom: -3%;
+}
+@media only screen and (max-width: 69.5em) {
+  .svg-carousel{
+    bottom: -1%;
+  }
+}
+@media only screen and (max-width: 41.5em) {
+  .svg-carousel{
+    bottom: 3.5%;
+  }
+}
 /***************************PRODUCTS********************/
 //productos postpago
 #products-postpago{
@@ -335,7 +356,7 @@ $count:0;
     }
   }
 }
-
+//**********section provider************//
 
 //footer
 footer {
@@ -368,5 +389,3 @@ ul.list-about {
     }
   }
 }
-
-
